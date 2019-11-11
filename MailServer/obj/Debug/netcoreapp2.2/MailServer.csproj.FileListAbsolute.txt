@@ -1,0 +1,14 @@
+c:\users\pgupta\source\repos\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.deps.json
+c:\users\pgupta\source\repos\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.runtimeconfig.json
+c:\users\pgupta\source\repos\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.runtimeconfig.dev.json
+c:\users\pgupta\source\repos\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.dll
+c:\users\pgupta\source\repos\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.pdb
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.csprojResolveAssemblyReference.cache
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.csproj.CoreCompileInputs.cache
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorAssemblyInfo.cache
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorAssemblyInfo.cs
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.AssemblyInfoInputs.cache
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.AssemblyInfo.cs
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorTargetAssemblyInfo.cache
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.dll
+c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.pdb
