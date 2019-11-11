@@ -2,16 +2,16 @@ pipeline {
     agent any
 	parameters {		
 			string(name: 'DOCKER_IMAGE_FILE',
-			       defaultValue: 'tripapi',
+			       defaultValue: 'shareapi',
 				   description: 'This will be the name of Docker image generated. This should be in lowercase')
 		    string(name: 'DOCKER_CONTAINER_NAME',
-			       defaultValue: 'tripapi-container',
+			       defaultValue: 'shareapi-container',
 				   description: 'This is the named docker container. <Docker_image_name>-container or <Project_name>-container is the suggested naming convention for this parameter')
 			string(name: 'USERNAME',
-			       defaultValue: 'orxeflights',
+			       defaultValue: 'yatharthsant',
 				   description: 'Enter your docker hub username here')
 			string(name: 'DOCKER_REPOSITORY',
-			       defaultValue: 'tripster',
+			       defaultValue: 'shareapi',
 				   description: 'This is the docker repository where docker image (artifact) will be posted. If the specified name does not exist, a new repository with the specified name gets generated')
 			string(name: 'APPLICATION_PORT',
 			       defaultValue: '10000',
@@ -22,8 +22,8 @@ pipeline {
 			string(name: 'APP_NAME',
 			       defaultValue: 'MailServer',
 				   description: 'This is your project/application name')
-			string(name: 'password',
-			       defaultValue: 'orxeflights06',
+			string(name: 'DOCKER_HUB_CREDENTIALS_ID',
+			       defaultValue: 'docker-hub-credentials',
 				   description: 'This field is used to reference docker hub credentials')
 			string(name: 'TAG_NAME',
 			       defaultValue: 'latest',
