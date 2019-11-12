@@ -12,3 +12,17 @@ c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailS
 c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorTargetAssemblyInfo.cache
 c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.dll
 c:\users\pgupta\source\repos\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.pdb
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.deps.json
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.runtimeconfig.json
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.runtimeconfig.dev.json
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\bin\Debug\netcoreapp2.2\MailServer.pdb
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.csproj.CoreCompileInputs.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorAssemblyInfo.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorAssemblyInfo.cs
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.AssemblyInfoInputs.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.AssemblyInfo.cs
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.RazorTargetAssemblyInfo.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.pdb
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServer\obj\Debug\netcoreapp2.2\MailServer.csprojAssemblyReference.cache

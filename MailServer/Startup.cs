@@ -29,20 +29,22 @@ namespace MailServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddScoped<SmtpClient>((serviceProvider) =>
-            {
-                var config = serviceProvider.GetRequiredService<IConfiguration>();
-                return new SmtpClient()
-                {
-                    Host = config.GetValue<String>("Email:Smtp:Host"),
-                    Port = config.GetValue<int>("Email:Smtp:Port"),
-                    Credentials = new NetworkCredential(
-                            config.GetValue<String>("Email:Smtp:Username"),
-                            config.GetValue<String>("Email:Smtp:Password")
-                        ),
-                    EnableSsl=config.GetValue<bool>("Email:Smtp:EnableSsl")
-                };
-            });
+            //services.AddScoped<SmtpClient>((serviceProvider) =>
+            //{
+            //    var config = serviceProvider.GetRequiredService<IConfiguration>();
+            //    return new SmtpClient()
+            //    {
+            //        Host = config.GetValue<String>("Email:Smtp:Host"),
+            //        Port = config.GetValue<int>("Email:Smtp:Port"),
+            //        Credentials = new NetworkCredential(
+            //                config.GetValue<String>("Email:Smtp:Username"),
+            //                config.GetValue<String>("Email:Smtp:Password")
+            //            ),
+            //        EnableSsl=config.GetValue<bool>("Email:Smtp:EnableSsl")
+            //    };
+            //});
+            services.AddTransient<ISmtpClientWrapper, SmptpWrapper>();
+            services.AddTransient<IEmailClientWrapper, EmailClientWrapper>();
             services.AddScoped<SendService>();
             services.AddCors(options =>
             {
