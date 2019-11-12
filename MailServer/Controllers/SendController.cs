@@ -34,7 +34,7 @@ namespace MailServer.Controllers
                 return BadRequest("Some problem occured at our side");
             }
             
-            return Ok("Mail Sent Successfully");
+            return Ok(new {message="Message Sent Successfully" });
         }
     }
 }
