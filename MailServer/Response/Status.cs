@@ -1,9 +1,7 @@
-﻿namespace MailServer.Services
-{
+﻿namespace MailServer.Response { 
   public enum Status
     { 
         failure,
         success
-
     }
 }

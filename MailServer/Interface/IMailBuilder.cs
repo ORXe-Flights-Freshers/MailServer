@@ -1,12 +1,12 @@
 ﻿using System.Net.Mail;
 
-namespace MailServer.Services
+namespace MailServer.Interface
 {
-    public interface IEmailClientWrapper
+    public interface IMailBuilder
     {
         MailAddress CreateAddress(string address, string displayName);
         MailAddress CreateAddress(string address);
-        MailMessage CreateMessage(MailAddress from, MailAddress to);
+        MailMessage CreateMessage();
     }
 
 }

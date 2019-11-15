@@ -1,8 +1,10 @@
-﻿using System.Net.Mail;
+﻿using MailServer.Interface;
+using System.Net.Mail;
 
-namespace MailServer.Services
+namespace MailServer.Provider
+
 {
-    public class EmailClientWrapper : IEmailClientWrapper
+    public class MailBuilder : IMailBuilder
     {
         public MailAddress CreateAddress(string address, string displayName)
         {
@@ -14,9 +16,9 @@ namespace MailServer.Services
             return new MailAddress(address);
         }
 
-        public MailMessage CreateMessage(MailAddress from, MailAddress to)
+        public MailMessage CreateMessage()
         {
-            return new MailMessage(from, to);
+            return new MailMessage();
         }
 
     }

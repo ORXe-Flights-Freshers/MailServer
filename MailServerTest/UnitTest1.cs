@@ -17,12 +17,12 @@
 //        //private readonly Mock<SmtpClient> _smtpoClient;
 //        //private EmailMessage emailMessage;
 //        private readonly SendService _sendService;
-//        private readonly Mock<ISmtpClientWrapper> _smtpClientWrapper;
+//        private readonly Mock<ISmtpClientBuilder> _smtpClientWrapper;
 //        private readonly Mock<IEmailClientWrapper> _emailClientWrapper;
 
 //        public UnitTest1()
 //        {
-//            _smtpClientWrapper = new Mock<ISmtpClientWrapper>();
+//            _smtpClientWrapper = new Mock<ISmtpClientBuilder>();
 //            _emailClientWrapper = new Mock<IEmailClientWrapper>();
 
 //            _sendService = new SendService(_smtpClientWrapper.Object, _emailClientWrapper.Object);

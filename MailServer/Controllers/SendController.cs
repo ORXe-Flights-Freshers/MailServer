@@ -3,9 +3,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mail;
 using Microsoft.AspNetCore.Cors;
-using MailServer.Services;
 using MailServer.Models;
 using System;
+using System.Linq;
+using MailServer.Provider;
+using MailServer.Response;
 
 namespace MailServer.Controllers
 {
@@ -18,23 +20,33 @@ namespace MailServer.Controllers
 
         public SendController(SendService sendService)
         {
-             _sendService= sendService;
+            _sendService = sendService;
         }
-      
         // POST api/values
         [HttpPost]
-        public async Task<ActionResult> Post([FromBody] EmailMessage emailMessage)
-        {
-            try
+        public  ActionResult Post([FromBody] EmailMessage emailMessage)
+       {
+
+            if (ModelState.IsValid)
             {
-                await _sendService.Send(emailMessage);
+
+                var res =  _sendService.Send(emailMessage);
+                if (res._success == Status.success)
+                {
+                    return Ok();
+
+                }
+
+                return StatusCode(500);
+               
             }
-            catch(Exception e)
+            else
             {
-                return BadRequest("Some problem occured at our side");
+                var errors = ModelState.Select(x => x.Value.Errors)
+                          .Where(y => y.Count > 0)
+                          .ToList();
+                return BadRequest(errors);
             }
-            
-            return Ok(new {message="Message Sent Successfully" });
         }
     }
 }

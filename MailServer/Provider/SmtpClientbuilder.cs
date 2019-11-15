@@ -1,16 +1,17 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using MailServer.Interface;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-namespace MailServer.Services
+namespace MailServer.Provider
 {
-    public class SmptpWrapper : ISmtpClientWrapper
+    public class SmtpClientBuilder : ISmtpClientBuilder
     {
         private SmtpClient _smtpClient;
 
-        public SmptpWrapper(IConfiguration config)
+        public SmtpClientBuilder(IConfiguration config)
         {
             _smtpClient = new SmtpClient() {
                 Host = config.GetValue<String>("Email:Smtp:Host"),
@@ -22,12 +23,11 @@ namespace MailServer.Services
                 EnableSsl = config.GetValue<bool>("Email:Smtp:EnableSsl")
             }; 
         }
-
-
-        public async Task SendMailAsync(MailMessage mailMessage)
+        public void send(MailMessage message)
         {
-           await _smtpClient.SendMailAsync(mailMessage);
+            _smtpClient.SendAsync( message,null);
         }
+      
     }
     
    
