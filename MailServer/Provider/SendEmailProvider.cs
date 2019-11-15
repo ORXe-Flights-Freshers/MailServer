@@ -3,6 +3,7 @@ using MailServer.Interface;
 using MailServer.Models;
 using MailServer.Response;
 using System;
+using System.Collections.Generic;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
@@ -28,7 +29,9 @@ namespace MailServer.Provider
 
             var from = _emailClient.CreateAddress(_sendCredentials.Email, _sendCredentials.DisplayName);
             var mailMessage = _emailClient.CreateMessage();
-            emailMessage.To.ForEach(recipient => mailMessage.To.Add(new MailAddress(recipient)));
+            HashSet<string> to_set = new HashSet<string>(emailMessage.To);
+            foreach (var recipient in to_set)
+                    mailMessage.To.Add(_emailClient.CreateAddress(recipient));
             mailMessage.From = from;
             mailMessage.Subject = emailMessage.Subject;
             mailMessage.Body = emailMessage.Body;
