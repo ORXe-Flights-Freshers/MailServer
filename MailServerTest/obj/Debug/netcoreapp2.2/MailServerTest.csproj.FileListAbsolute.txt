@@ -1,0 +1,17 @@
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\xunit.runner.reporters.netcoreapp10.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\xunit.runner.utility.netcoreapp10.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServerTest.deps.json
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServerTest.runtimeconfig.json
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServerTest.runtimeconfig.dev.json
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServerTest.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServerTest.pdb
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServer.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\bin\Debug\netcoreapp2.2\MailServer.pdb
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.csprojAssemblyReference.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.csproj.CoreCompileInputs.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.AssemblyInfoInputs.cache
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.AssemblyInfo.cs
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.csproj.CopyComplete
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.dll
+C:\Users\vitripathi\Desktop\ShareApi\MailServer\MailServerTest\obj\Debug\netcoreapp2.2\MailServerTest.pdb

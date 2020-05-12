@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using System.Net.Mail;
-using System.Net;
-using MailServer.Services;
+using MailServer.Entity;
+using MailServer.Interface;
+using MailServer.Provider;
 
 namespace MailServer
 {
@@ -29,20 +23,13 @@ namespace MailServer
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddScoped<SmtpClient>((serviceProvider) =>
-            {
-                var config = serviceProvider.GetRequiredService<IConfiguration>();
-                return new SmtpClient()
-                {
-                    Host = config.GetValue<String>("Email:Smtp:Host"),
-                    Port = config.GetValue<int>("Email:Smtp:Port"),
-                    Credentials = new NetworkCredential(
-                            config.GetValue<String>("Email:Smtp:Username"),
-                            config.GetValue<String>("Email:Smtp:Password")
-                        ),
-                    EnableSsl=config.GetValue<bool>("Email:Smtp:EnableSsl")
-                };
-            });
+            services.AddTransient<ISmtpClientBuilder, SmtpClientBuilder>();
+            services.Configure<SendCredentials>(
+        Configuration.GetSection(nameof(SendCredentials)));
+
+            services.AddSingleton<SendCredentials>(sp =>
+                sp.GetRequiredService<IOptions<SendCredentials>>().Value);
+            services.AddTransient<IMailBuilder, MailBuilder>();
             services.AddScoped<SendService>();
             services.AddCors(options =>
             {
